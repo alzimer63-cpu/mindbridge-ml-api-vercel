@@ -1,0 +1,16 @@
+{
+  "model_file": "alzheimer_cnn_model.pkl",
+  "architecture": "ResNet50",
+  "classes": [
+    "MildDemented",
+    "ModerateDemented",
+    "NonDemented",
+    "VeryMildDemented"
+  ],
+  "img_size": 224,
+  "best_val_accuracy": 0.9947,
+  "test_accuracy": 0.9915,
+  "training_epochs": 20,
+  "dataset": "AugmentedAlzheimerDataset",
+  "total_images": 33984
+}

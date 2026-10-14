@@ -1,0 +1,18 @@
+# Trimmed specifically for Vercel's ~250MB serverless function size limit —
+# no uvicorn (Vercel's Python runtime invokes the ASGI app directly, it
+# doesn't run a server process) and no imbalanced-learn (unused at runtime,
+# only needed for model training). See the size math in the repo README.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi==0.115.0
+pydantic==2.9.2
+scikit-learn==1.5.2
+xgboost==2.1.1
+numpy==1.26.4
+pandas==2.2.3
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
+pillow==10.2.0
+python-multipart==0.0.9
+pyjwt==2.10.1
+python-dotenv==1.0.1

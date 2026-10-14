@@ -1,0 +1,11 @@
+{
+  "model": "XGBoost (Tuned)",
+  "trained_at": "2026-03-26 12:40",
+  "features": 37,
+  "train_samples": 2222,
+  "test_samples": 430,
+  "imbalance_handling": "SMOTE + scale_pos_weight + class_weight",
+  "final_f1": 0.9055,
+  "final_auc": 0.9413,
+  "optimal_threshold": 0.39999999999999997
+}
